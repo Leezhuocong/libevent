@@ -6,6 +6,12 @@
   Where possible, it exits cleanly in response to a SIGINT (ctrl-c).
 */
 
+/*
+这个示例程序提供了一个用于监听TCP的简单服务器程序
+端口9995上的连接。当他们到达时，它会给他们写一条短信
+每个客户端连接，并在刷新后关闭每个连接。
+在可能的情况下，它会响应SIGINT (ctrl-c)干净地退出。
+*/
 
 #include <string.h>
 #include <errno.h>
